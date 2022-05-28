@@ -33,17 +33,3 @@ EXPOSE 3000
 
 #command to run when starting the container
 CMD ["/dist/main"]
-
-
-
-
-# RUN go build -o /out/example .
-# FROM scratch AS bin
-# COPY --from=build /out/example /
-
-# FROM golang:1.14.3-alpine AS build
-# WORKDIR /src
-# COPY . .
-# RUN go build -o /out/example .
-# FROM scratch AS bin
-# COPY --from=build /out/example /
